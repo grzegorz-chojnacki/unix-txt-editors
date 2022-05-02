@@ -54,7 +54,8 @@ i { color: var(--cyan) }
 tt {
   color: var(--orange);
   background-color: var(--bg-1);
-  padding: 0.2em 0.5em;
+  font-family: FiraCode, monospace;
+  padding: 0.1em 0.2em;
   border-radius: 0.3em;
 }
 
@@ -68,3 +69,9 @@ li::before {
 }
 
 h1, h2, h3, h4, h5, h6 { color: var(--red) }
+
+.editor-name {
+  display: inline-block;
+  width: 3ch;
+  text-align: center;
+}
