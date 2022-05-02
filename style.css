@@ -61,13 +61,14 @@ tt {
 }
 
 ul { list-style: none; }
-li::before {
+ul > li::before {
   content: '-';
   display: inline-block;
   width: 1em;
   margin-left: -1.5em;
   color: var(--red);
 }
+li::marker { color: var(--red) }
 
 h1, h2, h3, h4, h5, h6 { color: var(--red) }
 
@@ -80,7 +81,7 @@ h1, h2, h3, h4, h5, h6 { color: var(--red) }
 .off { color: var(--bg-2) }
 
 dd::before {
-  content: '>';
+  content: '> ';
   margin-left: -1.2em;
 }
 
