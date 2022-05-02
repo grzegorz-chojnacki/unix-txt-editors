@@ -11,6 +11,7 @@ const slides = [
   'unix-intro',
   'unix-oses',
   'editor-intro',
+  'timeline',
 ]
 const filename = window.location.pathname.split('/').pop().split('.')[0]
 const fileNumber = slides.findIndex(s => s === filename)
@@ -71,3 +72,17 @@ const loadFile = n => {
     }
   })
 })()
+
+const redAsterisks = () => {
+  const redify = (str, c, color) => {
+    return str.replace(`${c}`, `<span style="color: var(${color})">${c}</span>`)
+  }
+
+  ([...document.getElementById('timeline').children]).forEach(n => {
+    let text = n.innerHTML
+    text = redify(text, '*', '--red')
+    text = redify(text, '|', '--orange')
+    text = redify(text, '~', '--orange')
+    n.innerHTML = text
+  })
+}
