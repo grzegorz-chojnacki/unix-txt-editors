@@ -3,7 +3,7 @@ const slides = [
   'agenda',
   'why-care',
   'why-care-unix',
-  'why-care-tools',
+  'why-care-cli',
   'why-care-history',
   'why-care-history-vid',
   'why-care-paradigm',
