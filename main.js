@@ -73,16 +73,16 @@ const loadFile = n => {
   })
 })()
 
-const redAsterisks = () => {
-  const redify = (str, c, color) => {
+const colorize = () => {
+  const helper = (str, c, color) => {
     return str.replace(`${c}`, `<span style="color: var(${color})">${c}</span>`)
   }
 
   ([...document.getElementById('timeline').children]).forEach(n => {
     let text = n.innerHTML
-    text = redify(text, '*', '--red')
-    text = redify(text, '|', '--orange')
-    text = redify(text, '~', '--orange')
+    text = helper(text, '*', '--red')
+    text = helper(text, '|', '--orange')
+    text = helper(text, '~', '--orange')
     n.innerHTML = text
   })
 }
