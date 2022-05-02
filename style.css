@@ -1,0 +1,70 @@
+:root {
+  --fg: #BBBBBB;
+  --bg: #16161C;
+  --bg-1: #232530;
+  --bg-2: #4C4D53;
+  --red: #E95678;
+  --orange: #F09483;
+  --yellow: #FAC29A;
+  --cyan: #25B0BC;
+  --purple: #B877DB;
+}
+
+@font-face {
+  font-family: FiraCode;
+  src: url(FiraCode.ttf);
+}
+
+@keyframes fade-in {
+  from { opacity: 0 }
+  to   { opacity: 1 }
+}
+
+body > * {
+  animation-name: fade-in;
+  animation-duration: 0.3s;
+}
+
+body {
+  background: var(--bg);
+  color: var(--fg);
+  margin: 1em 2em;
+  font-size: 2em;
+  font-family: FiraCode, monospace;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar { display: none }
+
+header::before { content: '# ' }
+header {
+  font-size: 1.5em;
+  color: var(--red);
+  margin-bottom: 1em;
+}
+
+video {
+  margin: auto;
+  display: block;
+  max-width: 90vw;
+}
+
+b { color: var(--purple) }
+i { color: var(--cyan) }
+tt {
+  color: var(--orange);
+  background-color: var(--bg-1);
+  padding: 0.2em 0.5em;
+  border-radius: 0.3em;
+}
+
+ul { list-style: none; }
+li::before {
+  content: '-';
+  display: inline-block;
+  width: 1em;
+  margin-left: -1.5em;
+  color: var(--red);
+}
+
+h1, h2, h3, h4, h5, h6 { color: var(--red) }
