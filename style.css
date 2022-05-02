@@ -65,7 +65,7 @@ ul > li::before {
   content: '-';
   display: inline-block;
   width: 1em;
-  margin-left: -1.2em;
+  margin-left: -1em;
   color: var(--red);
 }
 li::marker { color: var(--red) }
@@ -82,7 +82,7 @@ h1, h2, h3, h4, h5, h6 { color: var(--red) }
 
 dd::before {
   content: '> ';
-  margin-left: -1.2em;
+  margin-left: -1em;
 }
 
 dd {
