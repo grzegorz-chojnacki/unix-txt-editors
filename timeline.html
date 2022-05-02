@@ -8,24 +8,36 @@
 </head>
 <body>
   <header id="header">The timeline</header>
-  <main style="font-size: 2rem">
-    <div>* 1970: The Epoch a.k.a. <i>Unix time</i></div>
-    <div>|</div>
-    <div>|</div>
-    <div>* 1973: UNIX with <tt>ed</tt></div>
-    <div>* 1974: <tt>sed</tt></div>
-    <div>|</div>
-    <div>* 1976: <tt>ex</tt> & <tt>vi</tt></div>
-    <div>|</div>
-    <div>~ </div>
-    <div>|</div>
-    <div>* 1981: MS DOS with <tt>edit.com</tt></div>
-    <div>|</div>
-    <div>~</div>
-    <div>|</div>
-    <div>* 1991: <tt>vim</tt> (and the Linux kernel)</div>
+  <main class="flex" style="font-size: 2rem">
+    <section id="timeline">
+      <div>* 1970: The Epoch a.k.a. <i>Unix time</i></div>
+      <div>|</div>
+      <div>|</div>
+      <div>* 1973: UNIX with <tt>ed</tt></div>
+      <div>* 1974: <tt>sed</tt></div>
+      <div>|</div>
+      <div>* 1976: <tt>ex</tt> & <tt>vi</tt></div>
+      <div>|</div>
+      <div>~ <span class="off">(5 years)</span></div>
+      <div>|</div>
+      <div>* 1981: MS DOS with <tt>edit.com</tt></div>
+      <div>|</div>
+      <div>~ <span class="off">(10 years)</span></div>
+      <div>|</div>
+      <div>* 1991: <tt>vim</tt> (and the Linux kernel)</div>
+    </section>
+    <section class="off">
+      =>
+    </section>
+    <section class="off">
+      current value: <i><span id="unixTime"></span></i><br>
+      (seconds since January 1st 1970)
+    </section>
   </main>
 </body>
 <script src="main.js"></script>
-<script>redAsterisks()</script>
+<script>
+  redAsterisks()
+  timer()
+</script>
 </html>

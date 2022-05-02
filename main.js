@@ -86,3 +86,10 @@ const redAsterisks = () => {
     n.innerHTML = text
   })
 }
+
+const timer = () => {
+  const unixTime = document.getElementById('unixTime')
+  const action = () => unixTime.innerText = Number(Math.floor(new Date() / 1000))
+  action()
+  setInterval(action, 1000);
+}
