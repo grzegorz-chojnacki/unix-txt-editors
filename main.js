@@ -25,7 +25,7 @@ const loadFile = n => {
 
 (() => {
   document.title = filename
-  header.innerText = `${String(header.innerText)} (${fileNumber}/${slides.length - 1})`
+  header.innerHTML = `${String(header.innerText)} <sup>${fileNumber}</sup>/<sub>${slides.length - 1}</sub>`
   video.muted = video.loop = true
 
   const mediaElementKeydownHandler = code => {
