@@ -5,6 +5,7 @@ const slides = [
   'why-care-unix',
   'why-care-tools',
   'why-care-history',
+  'why-care-history-vid',
   'why-care-paradigm',
   'why-care-kbd',
   'unix-intro',
