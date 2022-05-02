@@ -29,7 +29,7 @@ body {
   background: var(--bg);
   color: var(--fg);
   margin: 1em 2em;
-  font-size: 2em;
+  font-size: 2.5em;
   font-family: FiraCode, monospace;
   box-sizing: border-box;
 }
@@ -65,7 +65,7 @@ ul > li::before {
   content: '-';
   display: inline-block;
   width: 1em;
-  margin-left: -1.5em;
+  margin-left: -1.2em;
   color: var(--red);
 }
 li::marker { color: var(--red) }
