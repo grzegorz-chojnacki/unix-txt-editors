@@ -91,10 +91,11 @@ h1, h2, h3, h4, h5, h6 { color: var(--red) }
 
 dd::before {
   content: '> ';
-  margin-left: -1em;
+  margin-left: -1.2em;
 }
 
 dd {
+  margin-left: 1.2em;
   opacity: 0.8;
   color: var(--yellow);
 }
