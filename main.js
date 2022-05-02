@@ -12,6 +12,11 @@ const slides = [
   'unix-oses',
   'editor-intro',
   'timeline',
+  'ed-intro',
+  'sed-intro',
+  'ex-intro',
+  'vi-intro',
+  'vim-intro',
 ]
 const filename = window.location.pathname.split('/').pop().split('.')[0]
 const fileNumber = slides.findIndex(s => s === filename)
