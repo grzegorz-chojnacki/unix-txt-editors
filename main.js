@@ -44,5 +44,10 @@ addEventListener('keydown', event => {
         video.currentTime = 0
       }
       break
+    case 'KeyF': // Fullscreen
+      if (video instanceof HTMLMediaElement) {
+        video.requestFullscreen()
+      }
+      break
   }
 })
