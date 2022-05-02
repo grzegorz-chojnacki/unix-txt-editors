@@ -36,7 +36,7 @@ const loadFile = n => {
   const slideNumber = `<sub>${slides.length - 1}</sub>`
   const currentSlideNumber = `<sup>${fileNumber}</sup>`
   const counter = `<span class="off">${currentSlideNumber}/${slideNumber}</span>`
-  header.innerHTML = `${String(header.innerText)} ${counter}`
+  header.innerHTML = `${String(header.innerHTML)} ${counter}`
 
   video.muted = video.loop = true
 
