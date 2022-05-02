@@ -49,6 +49,7 @@ video {
   background-color: var(--bg-1);
   filter: sepia(1) grayscale(0.5) hue-rotate(190deg);
 }
+.no-filter { filter: none; }
 
 b { color: var(--purple) }
 i { color: var(--cyan) }
