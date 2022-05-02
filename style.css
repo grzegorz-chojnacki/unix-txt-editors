@@ -44,9 +44,10 @@ header {
 }
 
 video {
-  margin: auto;
   display: block;
   max-width: 90vw;
+  background-color: var(--bg-1);
+  filter: sepia(1) grayscale(0.5) hue-rotate(190deg);
 }
 
 b { color: var(--purple) }
