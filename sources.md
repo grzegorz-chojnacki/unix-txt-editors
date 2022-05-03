@@ -7,4 +7,4 @@
 - [Vim homepage](https://www.vim.org/)
 - [TTY in use](https://www.youtube.com/watch?v=AwqryPuwl_w)
 - [UNIX features](https://www.techopedia.com/definition/4637/unix)
-- [VIM cheatsheet](https://hamwaves.com/vim.tutorial/en/index.html)
+- [VI/VIM cheatsheet](https://hamwaves.com/vim.tutorial/en/index.html)
