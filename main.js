@@ -14,6 +14,7 @@ const slides = [
   'timeline',
   'ed-intro',
   'ed-options',
+  'ed-example',
   'sed-intro',
   'ex-intro',
   'vi-intro',
