@@ -23,7 +23,10 @@ const slides = [
   'vi-intro',
   'vi-example',
   'vim-intro',
+  'vim-customisation',
   'vim-example',
+  'summary',
+  'questions',
 ]
 const filename = window.location.pathname.split('/').pop().split('.')[0]
 const fileNumber = slides.findIndex(s => s === filename)
@@ -109,5 +112,27 @@ const timer = () => {
   const unixTime = document.getElementById('unixTime')
   const action = () => unixTime.innerText = Number(Math.floor(new Date() / 1000))
   action()
-  setInterval(action, 1000);
+  setInterval(action, 1000)
+}
+
+const questions = cb => {
+  const str = "Questions?"
+  let i = 0
+  const span = document.getElementById('questions')
+  const action = () => {
+    if (span.innerText !== str) {
+      span.innerText = span.innerText + str[i++]
+      setTimeout(action, 100 + Math.random() * 400)
+    } else {
+      cb()
+    }
+  }
+  setTimeout(action, 1000)
+}
+
+const cursor = () => {
+  const span = document.getElementById('cursor')
+  const action = () => span.innerHTML = (span.innerText == '█') ? '&nbsp;' : '█'
+  action()
+  setInterval(action, 1000)
 }
