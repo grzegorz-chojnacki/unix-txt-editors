@@ -50,9 +50,8 @@ header {
 video {
   display: block;
   max-width: 90vw;
-  filter: sepia(1) grayscale(0.5) hue-rotate(190deg);
 }
-.no-filter { filter: none; }
+.filter { filter: sepia(1) grayscale(0.5) hue-rotate(190deg); }
 
 b { color: var(--purple) }
 i { color: var(--cyan) }
