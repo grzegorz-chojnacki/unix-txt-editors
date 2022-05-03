@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header id="header"><tt>ed</tt>: standard editor</header>
+  <main style="font-size: 2.2rem">
+    <p>Some of <tt>ed</tt>'s commands:</p>
+    <table>
+      <tr>
+        <th>Command</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td><tt>e [file]</tt></td>
+        <td><tt>e</tt>dit <tt>[file]</tt>.</td>
+      </tr>
+      <tr>
+        <td><tt>w</tt></td>
+        <td><tt>w</tt>rite changes.</td>
+      </tr>
+      <tr>
+        <td><tt>q</tt></td>
+        <td><tt>q</tt>uit without saving.</td>
+      </tr>
+      <tr>
+        <td><tt>(.,.)d</tt></td>
+        <td><tt>d</tt>elete lines in range <tt>(.,.)</tt>.</td>
+      </tr>
+      <tr>
+        <td><tt>(1,$)g/RE/p</tt></td>
+        <td>
+          <tt>g</tt>et lines matching <tt>R</tt>egular <tt>E</tt>xpression<br>
+          in the whole file (<tt>1,$</tt>) and <tt>p</tt>rint them.
+        </td>
+      </tr>
+      <tr>
+        <td><tt>(.,$)s/RE/re/</tt></td>
+        <td>
+          <tt>s</tt>substitute <tt>RE</tt> with <tt>re</tt>placement, starting<br>
+          from the current line (<tt>.</tt>) up to the EOF (<tt>$</tt>)
+        </td>
+      </tr>
+    </table>
+  </main>
+</body>
+<script src="main.js"></script>
+</html>

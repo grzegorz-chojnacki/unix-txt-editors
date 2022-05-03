@@ -13,6 +13,7 @@ const slides = [
   'editor-intro',
   'timeline',
   'ed-intro',
+  'ed-options',
   'sed-intro',
   'ex-intro',
   'vi-intro',

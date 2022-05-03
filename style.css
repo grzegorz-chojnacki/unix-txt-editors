@@ -104,3 +104,18 @@ dd {
   display: flex;
   gap: 1em
 }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+tr {
+  border-top: 2px solid var(--bg-1);
+  border-bottom: 2px solid var(--bg-1);
+}
+
+th, td {
+  padding: 0.4em 0;
+  text-align: left;
+}
