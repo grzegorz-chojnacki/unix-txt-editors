@@ -72,6 +72,12 @@ const loadFile = n => {
       case 'ArrowLeft':
         loadFile(fileNumber - 1)
         break
+      case 'Home':
+        loadFile(0)
+        break
+      case 'End':
+        loadFile(slides.length - 1)
+        break
       case 'KeyX': // Fall-through
       case 'KeyZ': // Fall-through
       case 'KeyF': // Handle media bindings
