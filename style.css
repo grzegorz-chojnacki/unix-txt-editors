@@ -12,7 +12,7 @@
 
 @font-face {
   font-family: FiraCode;
-  src: url(FiraCode.ttf);
+  src: url(media/FiraCode.ttf);
 }
 
 @keyframes fade-in {
@@ -50,7 +50,6 @@ header {
 video {
   display: block;
   max-width: 90vw;
-  background-color: var(--bg-1);
   filter: sepia(1) grayscale(0.5) hue-rotate(190deg);
 }
 .no-filter { filter: none; }
