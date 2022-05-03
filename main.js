@@ -19,6 +19,7 @@ const slides = [
   'sed-intro',
   'sed-example',
   'ex-intro',
+  'ex-example',
   'vi-intro',
   'vim-intro',
 ]
