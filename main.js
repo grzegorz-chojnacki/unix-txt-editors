@@ -23,6 +23,7 @@ const slides = [
   'vi-intro',
   'vi-example',
   'vim-intro',
+  'vim-example',
 ]
 const filename = window.location.pathname.split('/').pop().split('.')[0]
 const fileNumber = slides.findIndex(s => s === filename)
