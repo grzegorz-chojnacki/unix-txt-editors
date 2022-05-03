@@ -21,6 +21,7 @@ const slides = [
   'ex-intro',
   'ex-example',
   'vi-intro',
+  'vi-example',
   'vim-intro',
 ]
 const filename = window.location.pathname.split('/').pop().split('.')[0]
