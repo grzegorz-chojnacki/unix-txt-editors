@@ -9,7 +9,36 @@
 <body>
   <header id="header"><tt>sed</tt>: stream editor</header>
   <main>
-    <p></p>
+    <section>
+      <table style="font-size: 2rem;">
+        <tr>
+          <th>Command</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td><tt>(1,$)s/RE/re/</tt></td>
+          <td>
+            <tt>s</tt>substitute <tt>RE</tt> with <tt>re</tt>placement, in the whole file (<tt>1,$</tt>).
+          </td>
+        </tr>
+      </table>
+    </section>
+    <section>
+      <center><p>↓</p></center>
+    </section>
+    <section>
+      <center>
+        <p>
+          <tt>[FILE]</tt> =>
+          <tt>sed 's/RE/re/'</tt> =>
+          <tt>*[FILE]</tt>
+        </p>
+        <p>
+          <tt>sed</tt> applies a transformation to a whole text buffer<br>
+          and prints the results without changing the original input.
+        </p>
+      </center>
+    </section>
   </main>
 </body>
 <script src="main.js"></script>

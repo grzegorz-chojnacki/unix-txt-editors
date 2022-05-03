@@ -46,7 +46,7 @@ const loadFile = n => {
     if (!(video instanceof HTMLMediaElement)) return
 
     switch (code) {
-     case 'KeyX': // Toggle playback
+      case 'KeyX': // Toggle playback
           if (video.paused) {
             video.play()
           } else {
