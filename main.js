@@ -16,6 +16,7 @@ const slides = [
   'ed-options',
   'ed-example',
   'sed-intro',
+  'sed-example',
   'ex-intro',
   'vi-intro',
   'vim-intro',
