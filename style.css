@@ -118,6 +118,40 @@ th, td {
   text-align: left;
 }
 
+#gnu-addendum {
+  position: absolute;
+  top: 5em;
+  left: 50vw;
+  display: flex;
+  gap: 1em;
+  font-size: 2rem;
+}
+
+#gnu-addendum > img {
+  height: 4em;
+  transform: scaleX(-1);
+}
+
+#gnu-addendum > p {
+  padding: 0.5em;
+  box-sizing: content-box;
+  border-radius: 0.5em;
+  background-color: var(--bg-1);
+}
+
+:root { --triangle: 0.75em }
+
+#gnu-addendum > p::after {
+  content: " ";
+  width: var(--triangle);
+  height: var(--triangle);
+  display: inline-block;
+  position: relative;
+  transform: rotate(45deg);
+  margin-right: calc(-1 * var(--triangle));
+  background-color: var(--bg-1);
+}
+
 #vim-example {
   position: absolute;
   border: 2px solid var(--bg-1);
