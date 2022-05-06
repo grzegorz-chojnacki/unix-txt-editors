@@ -24,7 +24,6 @@ const slides = [
   'vi-example',
   'vim-intro',
   'vim-improvements',
-  'vim-customisation',
   'vim-example',
   'summary',
   'questions',
