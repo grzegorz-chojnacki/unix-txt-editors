@@ -117,3 +117,10 @@ th, td {
   padding: 0.4em 0;
   text-align: left;
 }
+
+#vim-example {
+  position: absolute;
+  border: 2px solid var(--bg-1);
+  bottom: 0.2em;
+  right: 0.2em;
+}

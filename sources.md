@@ -8,3 +8,4 @@
 - [TTY in use](https://www.youtube.com/watch?v=AwqryPuwl_w)
 - [UNIX features](https://www.techopedia.com/definition/4637/unix)
 - [VI/VIM cheatsheet](https://hamwaves.com/vim.tutorial/en/index.html)
+- [Differences between VI and VIM](https://linuxiac.com/differences-between-vi-and-vim-text-editors-explained)
