@@ -137,19 +137,20 @@ th, td {
   box-sizing: content-box;
   border-radius: 0.5em;
   background-color: var(--bg-1);
+  position: relative;
+  box-shadow: 0 0 2em 0 #0008;
 }
 
-:root { --triangle: 0.75em }
-
 #gnu-addendum > p::after {
-  content: " ";
-  width: var(--triangle);
-  height: var(--triangle);
+  content: "";
   display: inline-block;
-  position: relative;
-  transform: rotate(45deg);
-  margin-right: calc(-1 * var(--triangle));
-  background-color: var(--bg-1);
+  position: absolute;
+  font-size: 0.5em;
+  top: 1.25em;
+  right: -1.5em;
+  border-top: 1em solid transparent;
+  border-bottom: 1em solid transparent;
+  border-left: 1.5em solid var(--bg-1);
 }
 
 #vim-example {
