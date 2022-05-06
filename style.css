@@ -127,6 +127,19 @@ th, td {
   font-size: 2rem;
 }
 
+@keyframes gnu-interrupt {
+  to { opacity: 1; transform: translateX(0); }
+}
+
+#gnu-addendum {
+  opacity: 0;
+  transform: translateX(300px);
+  animation-name: gnu-interrupt;
+  animation-delay: 5s;
+  animation-fill-mode: forwards;
+  animation-duration: 3s;
+}
+
 #gnu-addendum > img {
   height: 4em;
   transform: scaleX(-1);
