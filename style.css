@@ -122,6 +122,10 @@ th, td {
   text-align: left;
 }
 
+table:hover { color: var(--bg-2); }
+th { color: var(--fg); }
+tr:hover { color: var(--purple); }
+
 #gnu-addendum {
   position: absolute;
   top: 5em;
