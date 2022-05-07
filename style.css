@@ -139,9 +139,9 @@ th, td {
   opacity: 0;
   transform: translateX(300px);
   animation-name: gnu-interrupt;
-  animation-delay: 5s;
+  animation-delay: 10s;
   animation-fill-mode: forwards;
-  animation-duration: 3s;
+  animation-duration: 5s;
 }
 
 #gnu-addendum > img {
